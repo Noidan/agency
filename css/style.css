@@ -115,3 +115,8 @@ button::-moz-focus-inner {
   background: #343DAC;
   border-radius: 10px;
 }
+
+body {
+  font-family: "Inter", sans-serif;
+  /* font-family: "Poppins", sans-serif; */
+}
