@@ -1,4 +1,4 @@
-/*Обнуление*/
+/*-----Reset styles-----*/
 * {
   padding: 0;
   margin: 0;
@@ -36,7 +36,6 @@ body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -98,11 +97,11 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-/*--------------------*/
+/*----- Styles -----*/
 
 
 
-/*Slider*/
+/*----- Slider -----*/
 ::-webkit-scrollbar {
   width: 9px;
   /* ширина для вертикального скролла */
@@ -116,7 +115,226 @@ button::-moz-focus-inner {
   border-radius: 10px;
 }
 
+/*----- Body -----*/
+
 body {
   font-family: "Inter", sans-serif;
-  /* font-family: "Poppins", sans-serif; */
+  overflow-x: hidden;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0px 10px 0px 10px;
+  margin: 0 auto;
+}
+
+/* ----- HEADER ----- */
+.header {
+  background: #545EE1;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo__img {
+  width: 140px;
+  height: 54px;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  padding-right: 35px;
+}
+
+.header-link {
+  color: #BDC2FF;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.header-link:hover {
+  color: #fff;
+  transition: all .2s ease-in-out;
+}
+
+.header-link--active {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* ----- HERO ----- */
+.hero {
+  background-color: #545EE1;
+  height: 100vh;
+}
+
+.section__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__text {
+  width: 50%;
+  display: block;
+}
+
+.section__title {
+  font-size: 40px;
+  color: #333333;
+  font-weight: 700;
+}
+
+.hero__title {
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.hero__subject {
+  font-size: 24px;
+  font-weight: 500;
+  color: #E5E5E5;
+  text-transform: capitalize;
+  margin-bottom: 86px;
+}
+
+.section__illustration {
+  width: 50%;
+  padding-left: 40px;
+  position: relative;
+}
+
+/* ----- BUTTON ----- */
+.button-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-us__button {
+  background-color: #fff;
+  font-size: 24px;
+  color: #080A2B;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 23px 63px;
+  transition: all .2s ease-in-out;
+}
+
+.contact-us__button:hover {
+  transform: scale(1.02);
+}
+
+.contact-us__button:active {
+  transform: scale(0.98);
+  opacity: 80%;
+}
+
+.play__button {
+  background-color: transparent;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 500;
+  padding: 23px 40px;
+}
+
+.play__button:hover .play-icon {
+  transform: scale(1.1);
+}
+
+.play-icon {
+  padding-right: 8px;
+  transition: all .2s ease-in-out;
+}
+
+.hero-illustration__item-1 {
+  position: absolute;
+  left: 20%;
+  top: 35px;
+
+  animation-name: shaking;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shaking {
+  0% {
+    top: 35px;
+  }
+
+  25% {
+    top: 40px;
+  }
+
+  50% {
+    top: 30px;
+  }
+
+  75% {
+    top: 40px;
+  }
+
+  100% {
+    top: 35px;
+  }
+}
+
+.hero-illustration__item-2 {
+  position: absolute;
+  left: 26%;
+  top: 35%;
+
+  animation-name: rotating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.hero-illustration__item-3 {
+  position: absolute;
+  right: 7%;
+  top: 33%;
+
+  animation-name: rotating;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+}
+
+.hero-illustration__item-4 {
+  position: absolute;
+  right: 24%;
+  bottom: 5%;
+
+  animation-name: rotating;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(45deg);
+  }
+
+  50% {
+    transform: rotate(90deg);
+  }
+
+  75% {
+    transform: rotate(135deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
 }
