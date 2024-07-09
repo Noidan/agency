@@ -174,7 +174,10 @@ body {
 /* ----- HERO ----- */
 .hero {
   background-color: #545EE1;
-  height: 100vh;
+  height: 796px;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .section__inner {
@@ -337,4 +340,39 @@ body {
   100% {
     transform: rotate(180deg);
   }
+}
+
+/* ----- ABOUT ----- */
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-illustration {
+  width: 45%;
+  margin-right: 55px;
+}
+
+.about-text {
+  width: 50%;
+}
+
+.about-title {
+  margin-bottom: 20px;
+}
+
+.about-subtitle {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.about-subject {
+  color: #666;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0.18px;
+  text-transform: capitalize;
+  margin-bottom: 80px;
 }
