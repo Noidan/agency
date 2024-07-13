@@ -97,11 +97,11 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-/*----- Styles -----*/
+/*----- STLYLES -----*/
 
 
 
-/*----- Slider -----*/
+/*----- SLIDER -----*/
 ::-webkit-scrollbar {
   width: 9px;
   /* ширина для вертикального скролла */
@@ -115,7 +115,7 @@ button::-moz-focus-inner {
   border-radius: 10px;
 }
 
-/*----- Body -----*/
+/*----- BODY -----*/
 
 body {
   font-family: "Inter", sans-serif;
@@ -125,7 +125,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1120px;
   padding: 0px 10px 0px 10px;
   margin: 0 auto;
 }
@@ -184,6 +184,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto 70px auto;
 }
 
 .section__text {
@@ -347,6 +352,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 170px;
 }
 
 .about-illustration {
@@ -375,4 +381,115 @@ body {
   letter-spacing: 0.18px;
   text-transform: capitalize;
   margin-bottom: 80px;
+}
+
+/* ------ SERVICES ------ */
+
+.services.container {
+  padding: 0px;
+}
+
+.services__title {
+  margin-bottom: 20px;
+}
+
+.services__subject {
+  font-weight: 500;
+}
+
+.services__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.services__item {
+  position: relative;
+  width: 360px;
+  height: 345px;
+  border-radius: 40px;
+  border: 1px solid #f1f1f1;
+  padding: 50px 20px 36px 20px;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+
+.services__circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .2s ease-in-out;
+}
+
+.services__item:first-child .services__circle {
+  background-color: white;
+}
+
+.services__item:nth-child(2) .services__circle {
+  background-color: white;
+}
+
+.services__item:nth-child(3) .services__circle {
+  background-color: white;
+}
+
+.services__item:nth-child(4) .services__circle {
+  background-color: #f4fff3;
+}
+
+.services__item:nth-child(5) .services__circle {
+  background-color: #faefff;
+}
+
+.services__item:nth-child(6) .services__circle {
+  background-color: #f1fffc;
+}
+
+.services__item-title {
+  font-size: 22px;
+  font-weight: 600;
+  transition: all .2s ease-in-out;
+}
+
+.services__item-text {
+  color: #666666;
+  line-height: 30px;
+  letter-spacing: 1%;
+  transition: all .2s ease-in-out;
+}
+
+.services__icon g path {
+  transition: all .2s ease-in-out;
+}
+
+.services__item:hover {
+  cursor: pointer;
+  background-color: #545EE1;
+  border-color: #545EE1;
+  box-shadow: 0 4px 15px #545EE1;
+}
+
+.services__item:hover .services__circle {
+  background-color: #979de6;
+}
+
+.services__item:hover .services__icon g path {
+  fill: white;
+}
+
+.services__item:hover .services__item-title {
+  color: white;
+}
+
+.services__item:hover .services__item-text {
+  color: #E5E5E5;
 }
