@@ -603,3 +603,280 @@ body {
 .projects__item:nth-child(4) {
   width: 65%;
 }
+
+/* REVIEWS */
+
+.reviews {
+  background: #8D94F6;
+  height: 530px;
+  position: relative;
+  padding-top: 40px;
+  margin-bottom: 160px;
+}
+
+.reviews::before {
+  position: absolute;
+  content: '';
+  width: 166px;
+  height: 137px;
+  background: url('../pictures/icons/whatSay/quotes.png');
+  top: 53px;
+  right: 48%;
+}
+
+.reviews__inner {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__text {
+  width: 45%;
+}
+
+.reviews__title {
+  color: white;
+  margin-bottom: 35px;
+  width: 410px;
+}
+
+.reviews__subject {
+  color: white;
+  text-transform: capitalize;
+  width: 70%;
+  line-height: 30px;
+}
+
+/* SWIPER */
+.reviews__swiper {
+  width: 50%;
+  position: relative;
+  padding-left: 100px;
+}
+
+.reviews__swiper-wrapper {
+  margin-bottom: 40px;
+}
+
+.reviews__swiper-list {
+  position: relative;
+  width: 130%;
+}
+
+.reviews__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 30px 20px;
+  width: 64%;
+  position: relative;
+}
+
+.reviews__item:nth-child(odd) {
+  margin-left: 89px;
+}
+
+.reviews__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.reviews__item-text {
+  width: 70%;
+  margin-left: 35px;
+}
+
+.reviews__user-name {
+  color: #666666;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.reviews__user-message {
+  color: #B2B2B2;
+  font-size: 18px;
+  text-transform: capitalize;
+  letter-spacing: 1%;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+.reviews__swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews__swiper-pagination .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 50%;
+  width: 13px;
+  height: 13px;
+}
+
+.reviews__swiper-pagination .swiper-pagination-bullet-active {
+  background: #545EE1;
+  opacity: 100%;
+  width: 15px;
+  height: 15px;
+}
+
+/* BLOG */
+.blog {
+  margin-bottom: 150px;
+}
+
+.blog__text {
+  margin-bottom: 80px;
+}
+
+.blog__title {
+  margin-bottom: 18px;
+}
+
+.blog__subject {
+  font-size: 18px;
+  color: #333;
+  font-weight: 600;
+}
+
+/* SLIDER */
+.blog__swiper-wrapper {
+  padding-bottom: 75px;
+}
+
+.blog__swiper-slide {
+  width: 30%;
+}
+
+.blog__swiper-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-item {
+  margin-right: 20px;
+}
+
+.blog-item img {
+  border-radius: 10px;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.blog-item h3 {
+  font-size: 26px;
+  color: #191919;
+  font-weight: 500;
+  width: 80%;
+  line-height: 36px;
+}
+
+.blog__swiper-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.blog__swiper-pagination .swiper-pagination-bullet {
+  background: #545EE1;
+  opacity: 30%;
+  width: 10px;
+  height: 10px;
+
+}
+
+.blog__swiper-pagination .swiper-pagination-bullet-active {
+  background: #545EE1;
+  opacity: 100%;
+  width: 15px;
+  height: 15px;
+}
+
+/* SUBSCRIBE */
+.subscribe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe-title {
+  width: 40%;
+}
+
+.subscribe-subject {
+  color: #191919;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 11px;
+  line-height: 36px;
+}
+
+.subscribe-paragraph {
+  font-size: 16px;
+  color: #666;
+  line-height: 26px;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 3%;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F9FCFB;
+  border-radius: 15px;
+  padding: 9px;
+  width: 45%;
+  height: 70px;
+  box-shadow: 0px 5px 15px #d2d2d2;
+}
+
+.subscribe-input {
+  height: 100%;
+  padding: 10px;
+  padding-top: 18px;
+  background-color: white;
+  border: 1px solid transparent;
+  width: 100%;
+  margin-right: 5px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333333;
+
+  transition: all .2s ease-in;
+}
+
+.subscribe-input:focus {
+  border: 1px solid #979de6;
+
+}
+
+.subscribe-input::placeholder {
+  font-size: 16px;
+  color: #666;
+}
+
+.subscribe-button {
+  height: 100%;
+  background: #545EE1;
+  color: white;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 14px 37px;
+
+  border: 1px solid transparent;
+  transition: all .2s ease-in-out;}
+
+.subscribe-button:hover {
+  border: 1px solid #545EE1;
+  color: #545EE1;
+  background: white;
+}
