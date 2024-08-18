@@ -97,7 +97,19 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+hr {
+  border: 0;
+  margin: 10px 0px 0px 0px;
+  display: block;
+  background-color: #E5E5E5;
+  width: 100%;
+  height: 1px;
+}
+
 /* STLYLES */
+html {
+  scroll-behavior: smooth;
+}
 
 /* SLIDER */
 ::-webkit-scrollbar {
@@ -167,6 +179,11 @@ body {
 .header-link--active {
   color: #fff;
   font-weight: bold;
+}
+
+/* MAIN */
+main {
+  margin-bottom: 50px;
 }
 
 /*  HERO  */
@@ -873,10 +890,112 @@ body {
   padding: 14px 37px;
 
   border: 1px solid transparent;
-  transition: all .2s ease-in-out;}
+  transition: all .2s ease-in-out;
+}
 
 .subscribe-button:hover {
   border: 1px solid #545EE1;
   color: #545EE1;
   background: white;
+}
+
+/* FOOTER */
+.footer {
+  padding: 60px 0px;
+  display: grid;
+  justify-content: space-between;
+  align-self: flex-start;
+  gap: 50px;
+  grid-template-columns: 350px 1fr;
+}
+
+.footer-logo {
+  width: 140px;
+  height: 54px;
+  margin-bottom: 34px;
+}
+
+.footer-paragraph {
+  font-size: 15px;
+  color: #666666;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 3%;
+  text-transform: capitalize;
+}
+
+.footer-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr 1.1fr 1.4fr;
+}
+
+.footer-navigation .footer-column:not(:last-child) {
+  padding-right: 35px;
+}
+
+.column-name {
+  font-size: 24px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  columns: #191919;
+}
+
+.footer-item {
+  margin-bottom: 25px;
+}
+
+.footer-link {
+  position: relative;
+  font-size: 16px;
+  color: #666666;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.footer-link::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  background: #666666;
+  left: 100%;
+  bottom: 0px;
+  opacity: 0;
+  transition: all 0.5s cubic-bezier(0.62, -0.55, 0.4, 1.55);
+}
+
+.footer-link:hover {
+  color: #545EE1;
+  opacity: 1;
+}
+
+.footer-link:hover::after {
+  background-color: #545EE1;
+  opacity: 1;
+  left: 0%;
+}
+
+.get-in-text {
+  font-size: 16px;
+  color: #666666;
+  font-weight: 500;
+  line-height: 46px;
+  font-family: "Poppins", sans-serif;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon {
+  transition: all .2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
 }
